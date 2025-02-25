@@ -1,0 +1,16 @@
+----------------------------------------------------------------
+				doradi u skriptama				
+----------------------------------------------------------------
+
++++ makni špageti code u zajedničke funkcije
++++ dodaj univerzalnu putanju curr directory 
+    i za linux i za windows
++++ makni oznaku dolar jedan space od iznosa
++++ maknut suvišni cfg file čita se iz loga posljednji
+--- sumiranje razlika po danu kako bi se vidjelo
+    da li je dan dobitak ili gubitak
+
++++ pretvori u lokalnu valutu
+    +++ pretvorio u euro
+
+-------------
