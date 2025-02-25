@@ -117,7 +117,7 @@ function PrintRepo()
         if ($differ > 0)
         {               
             echo $newline.str_repeat("_", 70).$newline;
-            echo " ". "<br>[diff]" . str_pad(" ", $str - 6 - (strlen(round($differ,2)))," ",STR_PAD_LEFT) . round($differ,2) . "$ " . $perc . " " . (($perc * 100)-100) . "%". "\e[0m". $newline;
+            echo " ". "<br>[diff]" . str_pad(" ", $str - 6 - (strlen(round($differ,2)))," ",STR_PAD_LEFT) . round($differ,2) . "$ " . $perc . " " . (($perc * 100)-100) . "%". " ". $newline;
             echo " ". "<br>[diff] datetime " . $diff->d . " " . $diff->h .":".$diff->i.":".$diff->s .  " ". $newline;   
             echo "// ".$ihave." ".$ihaveuro." // ". round($ulogprice,2) . " $"." ".round($geteuro*$ulogprice,2)." €".$newline;
             if ($perc > ($factorassist + $difa)){
@@ -140,6 +140,7 @@ function PrintRepo()
     }
 }
 
+
 function file_get_contents_curl($url) {
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_HEADER, 0);
@@ -149,6 +150,7 @@ function file_get_contents_curl($url) {
     curl_close($ch);    
     return $data;
 }
+
 
 function file_get_contents_curl_asta($url) {
     
